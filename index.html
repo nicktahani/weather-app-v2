@@ -1,0 +1,148 @@
+<!doctype html>
+<!--
+Beginning of Weather App
+
+Also requires files:
+	weather.js
+-->
+<html lang="en_US">
+
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Weather App</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet'>
+</head>
+
+<body onload="init()">
+
+		<header>
+				<div class='top'>
+						<div class='leftSide'>
+								<div id="time">
+								</div>
+								<div id="date">
+								</div>
+						</div>
+
+						<div class='rightSide'>
+								<div id="action">
+										<div>
+												<input id="zipbox" type="text" placeholder="zipcode or location name">
+										</div>
+										<div id="submit">
+												<button>submit</button>
+										</div>
+								</div>
+								<div class="plus"> <img src="../assets/plus.png" alt='+' onclick="getNewLocation()" /> </div>
+						</div>
+				</div>
+		</header>
+
+		<div class='info'>
+				<div id="topImage">Top image </div>
+
+				<div id="city">
+						<div id="cityName"> </div>
+						<div id="cityTemp"> </div>
+						<div id="cityDesc"> </div>
+				</div>
+
+				<div id="hum_wind">
+						<div id="humidity">
+								<div id="humImage"> </div>
+								<div id="hum"> </div>
+						</div>
+						<div id="windy">
+								<div id="windImage"> </div>
+								<div id="windspeed"> </div>
+						</div>
+				</div>
+		</div>
+		<main>
+
+				<div id="weatherBox">
+						<div id="forecast0">
+								<div id="fday0"> </div>
+								<div id="fimg0"> </div>
+								<div id="fdesc0"> </div>
+								<div id="fhilow0"> </div>
+						</div>
+						<div id="forecast1">
+								<div id="fday1"> </div>
+								<div id="fimg1"> </div>
+								<div id="fdesc1"> </div>
+								<div id="fhilow1"> </div>
+						</div>
+						<div id="forecast2">
+								<div id="fday2"> </div>
+								<div id="fimg2"> </div>
+								<div id="fdesc2"> </div>
+								<div id="fhilow2"> </div>
+						</div>
+						<div id="forecast3">
+								<div id="fday3"> </div>
+								<div id="fimg3"> </div>
+								<div id="fdesc3"> </div>
+								<div id="fhilow3"> </div>
+						</div>
+						<div id="forecast4">
+								<div id="fday4"> </div>
+								<div id="fimg4"> </div>
+								<div id="fdesc4"> </div>
+								<div id="fhilow4"> </div>
+						</div>
+						<div id="forecast5">
+								<div id="fday5"> </div>
+								<div id="fimg5"> </div>
+								<div id="fdesc5"> </div>
+								<div id="fhilow5"> </div>
+						</div>
+						<div id="forecast6">
+								<div id="fday6"> </div>
+								<div id="fimg6"> </div>
+								<div id="fdesc6"> </div>
+								<div id="fhilow6"> </div>
+						</div>
+						<div id="forecast7">
+								<div id="fday7"> </div>
+								<div id="fimg7"> </div>
+								<div id="fdesc7"> </div>
+								<div id="fhilow7"> </div>
+						</div>
+						<div id="forecast8">
+								<div id="fday8"> </div>
+								<div id="fimg8"> </div>
+								<div id="fdesc8"> </div>
+								<div id="fhilow8"> </div>
+						</div>
+						<div id="forecast9">
+								<div id="fday9"> </div>
+								<div id="fimg9"> </div>
+								<div id="fdesc9"> </div>
+								<div id="fhilow9"> </div>
+						</div>
+				</div>
+
+				<div class='nav'>
+						<div id='prev'>
+								<img src="../assets/arrow-left.png" width="60px" height="50px" alt="left arrow" onclick="moveToLeft();" /> previous forecasts
+						</div>
+						<div id='next'>
+								more forecasts
+								<img src="../assets/arrow-right.png" width="60px" height="50px" alt="right arrow" onclick="moveToRight();" />
+						</div>
+				</div>
+		</main>
+		<footer href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="../assets/ow_img.png" />
+		</footer>
+		<script src="weather.js"></script>
+		<script>
+				function init() {
+						getNewLocation();
+				}
+		</script>
+</body>
+
+</html>
