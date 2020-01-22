@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", "Lucida Grande", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   min-height: 100vh;  
   background: linear-gradient(#2E85B9, #19173C);
   display: flex;
@@ -47,9 +47,8 @@ input::placeholder {
   font-size: 0.9em;
 }
 
-#forecast0, #forecast1, #forecast2, #forecast3, 
-#forecast4, #forecast5, #forecast6, #forecast7, 
-#forecast8, #forecast9, #todayForecast {
+#card0, #card1, #card2, #card3, 
+#card4, #todayForecast {
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -230,25 +229,7 @@ footer img {
 }
 
 @media (max-width: 480px) {
-  div#cityTemp { display: none; }
-  div#cityDesc{ display: none; }
-  div#topImage{ display: none; }
-  div#hum_wind { display: none; }
-  div#date { display: none; }
-  div#submit { display: none; }
-  #forecast0 { display: none; }
-  #forecast1 { display: none; }
-  #forecast2 { display: none; }
-  #forecast3 { display: none; }
-  #forecast4 { display: none; }
-  #forecast5 { display: none; }
-  #forecast6 { display: none; }
-  #forecast7 { display: none; }
-  #forecast8 { display: none; }
-  #forecast9 { display: none; }
-  .nav { display: none; }
-  .plus { visibility: visible; }
-  footer { display: none; }
+
 }
 
 
